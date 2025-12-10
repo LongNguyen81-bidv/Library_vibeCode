@@ -89,10 +89,7 @@ function Landing() {
       <section className="pt-32 pb-20 px-4">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-ink-900 mb-6 text-balance">
-              Your Digital Library,
-              <span className="block text-wood-600 mt-2">Reimagined</span>
-            </h2>
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-ink-900 mb-6 text-balance">Your Digital Library, Reimagined</h2>
             <p className="text-xl md:text-2xl text-ink-600 mb-12 text-balance max-w-2xl mx-auto">
               Discover, borrow, and enjoy books from our curated collection.
               A modern library experience at your fingertips.
