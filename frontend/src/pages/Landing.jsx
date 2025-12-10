@@ -8,23 +8,23 @@ function Landing() {
   const features = [
     {
       icon: <BookOpen className="w-6 h-6" />,
-      title: 'Vast Collection',
-      description: 'Access thousands of books across fiction, technology, science, and more'
+      title: 'Bộ Sưu Tập Đồ Sộ',
+      description: 'Tiếp cận hàng nghìn cuốn sách về tiểu thuyết, công nghệ, khoa học và nhiều hơn nữa'
     },
     {
       icon: <Clock className="w-6 h-6" />,
-      title: 'Easy Borrowing',
-      description: 'Borrow books online and manage your reading schedule effortlessly'
+      title: 'Mượn Sách Dễ Dàng',
+      description: 'Mượn sách trực tuyến và quản lý lịch đọc sách một cách dễ dàng'
     },
     {
       icon: <Users className="w-6 h-6" />,
-      title: 'Community',
-      description: 'Join a community of readers and discover new perspectives'
+      title: 'Cộng Đồng',
+      description: 'Tham gia cộng đồng độc giả và khám phá những góc nhìn mới'
     },
     {
       icon: <Award className="w-6 h-6" />,
-      title: 'Curated Lists',
-      description: 'Explore handpicked collections and staff recommendations'
+      title: 'Danh Sách Được Tuyển Chọn',
+      description: 'Khám phá những bộ sưu tập được chọn lọc và đề xuất từ nhân viên'
     }
   ];
 
@@ -32,34 +32,34 @@ function Landing() {
     {
       title: 'Clean Code',
       author: 'Robert C. Martin',
-      category: 'Technology',
+      category: 'Công Nghệ',
       available: 5
     },
     {
       title: 'Atomic Habits',
       author: 'James Clear',
-      category: 'Self-Help',
+      category: 'Tự Phát Triển',
       available: 6
     },
     {
       title: 'Sapiens',
       author: 'Yuval Noah Harari',
-      category: 'Non-Fiction',
+      category: 'Phi Hư Cấu',
       available: 5
     },
     {
       title: '1984',
       author: 'George Orwell',
-      category: 'Fiction',
+      category: 'Tiểu Thuyết',
       available: 3
     }
   ];
 
   const stats = [
-    { value: '15+', label: 'Books Available' },
-    { value: '7', label: 'Categories' },
-    { value: '24/7', label: 'Online Access' },
-    { value: '100%', label: 'Free to Join' }
+    { value: '15+', label: 'Sách Có Sẵn' },
+    { value: '7', label: 'Thể Loại' },
+    { value: '24/7', label: 'Truy Cập Trực Tuyến' },
+    { value: '100%', label: 'Miễn Phí Tham Gia' }
   ];
 
   return (
@@ -73,13 +73,13 @@ function Landing() {
               <h1 className="text-2xl font-bold text-ink-900">LibraryHub</h1>
             </Link>
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#" className="text-ink-600 hover:text-ink-900 transition-colors">Browse Books</a>
-              <a href="#" className="text-ink-600 hover:text-ink-900 transition-colors">Categories</a>
-              <a href="#" className="text-ink-600 hover:text-ink-900 transition-colors">About</a>
+              <a href="#" className="text-ink-600 hover:text-ink-900 transition-colors">Duyệt Sách</a>
+              <a href="#" className="text-ink-600 hover:text-ink-900 transition-colors">Thể Loại</a>
+              <a href="#" className="text-ink-600 hover:text-ink-900 transition-colors">Giới Thiệu</a>
             </div>
             <div className="flex items-center space-x-4">
-              <Link to="/login" className="btn-outline text-sm">Sign In</Link>
-              <Link to="/register" className="btn-primary text-sm">Get Started</Link>
+              <Link to="/login" className="btn-outline text-sm">Đăng Nhập</Link>
+              <Link to="/register" className="btn-primary text-sm">Bắt Đầu</Link>
             </div>
           </div>
         </div>
@@ -89,10 +89,10 @@ function Landing() {
       <section className="pt-32 pb-20 px-4">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-ink-900 mb-6 text-balance">Your Digital Library, Reimagined</h2>
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-ink-900 mb-6 text-balance">Thư Viện Số Của Bạn, Được Tái Tạo</h2>
             <p className="text-xl md:text-2xl text-ink-600 mb-12 text-balance max-w-2xl mx-auto">
-              Discover, borrow, and enjoy books from our curated collection.
-              A modern library experience at your fingertips.
+              Khám phá, mượn và tận hưởng sách từ bộ sưu tập được tuyển chọn của chúng tôi.
+              Trải nghiệm thư viện hiện đại ngay trong tầm tay của bạn.
             </p>
 
             {/* Search Bar */}
@@ -101,13 +101,13 @@ function Landing() {
                 <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-ink-400" />
                 <input
                   type="text"
-                  placeholder="Search for books, authors, or topics..."
+                  placeholder="Tìm kiếm sách, tác giả hoặc chủ đề..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="input pl-12 pr-32 py-4 text-lg shadow-soft-md"
                 />
                 <button className="absolute right-2 top-1/2 -translate-y-1/2 btn-primary">
-                  Search
+                  Tìm Kiếm
                 </button>
               </div>
             </div>
@@ -129,9 +129,9 @@ function Landing() {
       <section className="py-20 bg-white">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h3 className="text-4xl md:text-5xl font-bold text-ink-900 mb-4">Why Choose LibraryHub?</h3>
+            <h3 className="text-4xl md:text-5xl font-bold text-ink-900 mb-4">Tại Sao Chọn LibraryHub?</h3>
             <p className="text-xl text-ink-600 max-w-2xl mx-auto">
-              Experience the perfect blend of traditional library warmth and modern convenience
+              Trải nghiệm sự kết hợp hoàn hảo giữa sự ấm áp của thư viện truyền thống và tiện ích hiện đại
             </p>
           </div>
 
@@ -158,11 +158,11 @@ function Landing() {
         <div className="container-custom">
           <div className="flex items-center justify-between mb-12">
             <div>
-              <h3 className="text-4xl font-bold text-ink-900 mb-2">Popular Books</h3>
-              <p className="text-xl text-ink-600">Most borrowed titles this month</p>
+              <h3 className="text-4xl font-bold text-ink-900 mb-2">Sách Phổ Biến</h3>
+              <p className="text-xl text-ink-600">Các đầu sách được mượn nhiều nhất tháng này</p>
             </div>
             <button className="btn-outline group">
-              View All
+              Xem Tất Cả
               <ArrowRight className="inline-block ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
           </div>
@@ -183,9 +183,9 @@ function Landing() {
                 </h4>
                 <p className="text-ink-600 text-sm mb-4">{book.author}</p>
                 <div className="flex items-center justify-between pt-4 border-t border-paper-200">
-                  <span className="text-sm text-ink-500">{book.available} available</span>
+                  <span className="text-sm text-ink-500">{book.available} cuốn có sẵn</span>
                   <button className="text-sm text-wood-600 font-medium hover:text-wood-700 transition-colors">
-                    Borrow →
+                    Mượn →
                   </button>
                 </div>
               </div>
@@ -198,16 +198,16 @@ function Landing() {
       <section className="py-20 bg-ink-900 text-white">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-4xl md:text-5xl font-bold mb-6">Ready to Start Reading?</h3>
+            <h3 className="text-4xl md:text-5xl font-bold mb-6">Sẵn Sàng Bắt Đầu Đọc Sách?</h3>
             <p className="text-xl text-ink-300 mb-10">
-              Join our community of readers today. Sign up for free and get instant access to our entire collection.
+              Tham gia cộng đồng độc giả của chúng tôi ngay hôm nay. Đăng ký miễn phí và có quyền truy cập ngay lập tức vào toàn bộ bộ sưu tập của chúng tôi.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/register" className="btn bg-white text-ink-900 hover:bg-paper-100 text-lg px-8 py-4">
-                Create Account
+                Tạo Tài Khoản
               </Link>
               <button className="btn border-2 border-white text-white hover:bg-white hover:text-ink-900 text-lg px-8 py-4">
-                Browse Books
+                Duyệt Sách
               </button>
             </div>
           </div>
@@ -224,39 +224,39 @@ function Landing() {
                 <span className="text-lg font-bold text-white">LibraryHub</span>
               </div>
               <p className="text-sm">
-                Your modern digital library for discovering and borrowing books online.
+                Thư viện số hiện đại của bạn để khám phá và mượn sách trực tuyến.
               </p>
             </div>
             <div>
-              <h5 className="text-white font-semibold mb-4">Quick Links</h5>
+              <h5 className="text-white font-semibold mb-4">Liên Kết Nhanh</h5>
               <ul className="space-y-2 text-sm">
-                <li><a href="#" className="hover:text-white transition-colors">Browse Books</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Categories</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Popular</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">New Arrivals</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Duyệt Sách</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Thể Loại</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Phổ Biến</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Mới Về</a></li>
               </ul>
             </div>
             <div>
-              <h5 className="text-white font-semibold mb-4">Account</h5>
+              <h5 className="text-white font-semibold mb-4">Tài Khoản</h5>
               <ul className="space-y-2 text-sm">
-                <li><Link to="/login" className="hover:text-white transition-colors">Sign In</Link></li>
-                <li><Link to="/register" className="hover:text-white transition-colors">Register</Link></li>
-                <li><a href="#" className="hover:text-white transition-colors">My Books</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Settings</a></li>
+                <li><Link to="/login" className="hover:text-white transition-colors">Đăng Nhập</Link></li>
+                <li><Link to="/register" className="hover:text-white transition-colors">Đăng Ký</Link></li>
+                <li><a href="#" className="hover:text-white transition-colors">Sách Của Tôi</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Cài Đặt</a></li>
               </ul>
             </div>
             <div>
-              <h5 className="text-white font-semibold mb-4">Support</h5>
+              <h5 className="text-white font-semibold mb-4">Hỗ Trợ</h5>
               <ul className="space-y-2 text-sm">
-                <li><a href="#" className="hover:text-white transition-colors">Help Center</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Contact Us</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">FAQ</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Trung Tâm Trợ Giúp</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Liên Hệ</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Câu Hỏi Thường Gặp</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Chính Sách Bảo Mật</a></li>
               </ul>
             </div>
           </div>
           <div className="border-t border-ink-800 pt-8 text-center text-sm">
-            <p>&copy; 2025 LibraryHub. All rights reserved. Built with care for book lovers.</p>
+            <p>&copy; 2025 LibraryHub. Bảo lưu mọi quyền. Được xây dựng với tình yêu dành cho những người yêu sách.</p>
           </div>
         </div>
       </footer>
